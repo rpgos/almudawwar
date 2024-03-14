@@ -1,3 +1,5 @@
+@import 'bulma/css/bulma.css';
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -18,7 +20,8 @@ Colours:
 #28112B
 #453643
 #8DAA91
-FCAF58
+#FCAF58
+#CC2936
 */
 
 
@@ -28,11 +31,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 @media (prefers-color-scheme: light) {
