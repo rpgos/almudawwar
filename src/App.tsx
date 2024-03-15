@@ -1,9 +1,12 @@
 import './App.css'
+import Footer from './components/Footer'
+import Hero from './components/Hero'
 
 function App() {
   return (
     <>
-      <h1>Al-Mudawwar</h1>
+      <Hero />
+      <Footer />
     </>
   )
 }
