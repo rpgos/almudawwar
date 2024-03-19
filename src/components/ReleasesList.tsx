@@ -10,7 +10,7 @@ function ReleasesList() {
   }
 
   return (
-    <section className="section is-large">
+    <section className="section">
       {
         releaseRows.map(row => {
           return (
