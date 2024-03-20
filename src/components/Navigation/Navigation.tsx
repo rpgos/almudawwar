@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './navigation.scss'
+import { Link } from 'react-router-dom'
 
 function Navigation() {
   const [active, setActive] = useState(0)
@@ -15,10 +16,10 @@ function Navigation() {
   return (
     <nav className="navigation">
       <ul className="menu">
-        <li><a className={`${isActiveClass(0)} item`} onClick={() => handleClick(0)}>/</a></li>
-        <li><a className={`${isActiveClass(1)} item`} onClick={() => handleClick(1)}>Music</a></li>
-        <li><a className={`${isActiveClass(2)} item`} onClick={() => handleClick(2)}>CV</a></li>
-        <li><a className={`${isActiveClass(3)} item`} onClick={() => handleClick(3)}>About</a></li>
+        <li><Link to="/" className={`${isActiveClass(0)} item`} onClick={() => handleClick(0)}>/</Link></li>
+        <li><Link to="/music" className={`${isActiveClass(1)} item`} onClick={() => handleClick(1)}>Music</Link></li>
+        <li><Link to="/cv" className={`${isActiveClass(2)} item`} onClick={() => handleClick(2)}>CV</Link></li>
+        <li><Link to="/about" className={`${isActiveClass(3)} item`} onClick={() => handleClick(3)}>About</Link></li>
       </ul>
     </nav>
   )

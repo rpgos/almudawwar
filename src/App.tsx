@@ -1,15 +1,43 @@
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
 import Footer from './components/Footer/Footer'
-import Hero from './components/Hero'
+
 import Navigation from './components/Navigation/Navigation'
-import ReleasesList from './components/ReleasesList'
+
+import Root from './components/Root'
+import HomePage from './pages/HomePage'
+import MusicPage from './pages/MusicPage'
+import CvPage from './pages/CvPage'
+import AboutPage from './pages/AboutPage'
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Root />,
+      children: [
+        {
+          index: true,
+          element: <HomePage />
+        },
+        {
+          path: '/music',
+          element: <MusicPage />
+        },
+        {
+          path: '/cv',
+          element: <CvPage />
+        },
+        {
+          path: '/about',
+          element: <AboutPage />
+        },
+      ]
+    }
+  ])
   return (
     <>
-      <Navigation />
-      <Hero />
-      <ReleasesList />
+      <RouterProvider router={router} />
       <Footer />
     </>
   )
