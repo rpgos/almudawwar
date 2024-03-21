@@ -31,7 +31,7 @@ function Hero() {
                 </article>
               </Link>
 
-              <Link to="/cv" className="tile is-parent">
+              <Link to="/work" className="tile is-parent">
                 <article className="tile is-child notification is-dark">
                   <p className="title">Software Development</p>
                   <div className="tags">

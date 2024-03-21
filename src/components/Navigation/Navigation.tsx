@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './navigation.scss'
 import { Link, useLocation } from 'react-router-dom'
+import { menuItems } from './menuItems'
 
 function Navigation() {
   const { pathname } = useLocation()
@@ -17,10 +18,18 @@ function Navigation() {
   return (
     <nav className="navigation">
       <ul className="menu">
-        <li><Link to="/" className={`${isActiveClass('/')} item`} onClick={() => handleClick('/')}>/</Link></li>
-        <li><Link to="/music" className={`${isActiveClass('/music')} item`} onClick={() => handleClick('/music')}>Music</Link></li>
-        <li><Link to="/work" className={`${isActiveClass('/work')} item`} onClick={() => handleClick('/work')}>Work</Link></li>
-        <li><Link to="/about" className={`${isActiveClass('/about')} item`} onClick={() => handleClick('/about')}>About</Link></li>
+        {
+          menuItems.map(item => {
+            return <li>
+              <Link
+                to={item.path}
+                className={`${isActiveClass(item.path)} item`}
+                onClick={() => handleClick(item.path)}>
+                  {item.name}
+              </Link>
+            </li>
+          })
+        }
       </ul>
     </nav>
   )
