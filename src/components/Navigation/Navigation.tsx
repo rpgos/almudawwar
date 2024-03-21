@@ -19,7 +19,7 @@ function Navigation() {
       <ul className="menu">
         <li><Link to="/" className={`${isActiveClass('/')} item`} onClick={() => handleClick('/')}>/</Link></li>
         <li><Link to="/music" className={`${isActiveClass('/music')} item`} onClick={() => handleClick('/music')}>Music</Link></li>
-        <li><Link to="/cv" className={`${isActiveClass('/cv')} item`} onClick={() => handleClick('/cv')}>CV</Link></li>
+        <li><Link to="/work" className={`${isActiveClass('/work')} item`} onClick={() => handleClick('/work')}>Work</Link></li>
         <li><Link to="/about" className={`${isActiveClass('/about')} item`} onClick={() => handleClick('/about')}>About</Link></li>
       </ul>
     </nav>

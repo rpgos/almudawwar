@@ -22,7 +22,7 @@ function App() {
           element: <MusicPage />
         },
         {
-          path: '/cv',
+          path: '/work',
           element: <CvPage />
         },
         {
