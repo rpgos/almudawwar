@@ -1,0 +1,13 @@
+.hero {
+  .tile {
+  
+    .is-child {
+      transition: all .2s ease-in-out;
+    
+      &:hover {
+        transform: scale(1.1);
+        border: 3px solid #8DAA91;
+      }
+    }
+  }
+}

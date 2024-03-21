@@ -1,14 +1,10 @@
-import Hero from "../components/Hero"
-import ReleasesList from "../components/ReleasesList"
-
-
+import Hero from "../components/Hero/Hero"
 
 function HomePage() {
 
   return (
     <>
       <Hero />
-      <ReleasesList />
     </>
   )
 }
