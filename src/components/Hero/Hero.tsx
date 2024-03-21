@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { SKILLS } from '../../constants/skills'
 import './hero.scss'
 
@@ -15,20 +16,22 @@ function Hero() {
                     “that which is round”
                   </div>
                 </article>
-                <article className="tile is-child notification is-dark">
+
+                <Link to="/about" className="tile is-child notification is-dark">
                   <p className="subtitle is-3">...and a musical project by</p>
                   <p><span className="tag is-primary is-large is-rounded">Rodrigo Guerreiro</span></p>
-                </article>
+                </Link>
               </div>
-              <div className="tile is-parent">
+              <Link to="/music" className="tile is-parent">
                 <article className="tile is-child notification is-dark">
                   <p className="title">Music to daydream to</p>
                   <figure className="image is-1by1">
                     <img src="https://f4.bcbits.com/img/a1328975379_10.jpg" />
                   </figure>
                 </article>
-              </div>
-              <div className="tile is-parent">
+              </Link>
+
+              <Link to="/cv" className="tile is-parent">
                 <article className="tile is-child notification is-dark">
                   <p className="title">Software Development</p>
                   <div className="tags">
@@ -39,7 +42,7 @@ function Hero() {
                     }
                   </div>
                 </article>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
