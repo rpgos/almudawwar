@@ -3,8 +3,13 @@ import './hero.scss'
 import TileGroup from '../TileGroup'
 import TileItem from '../TileItem'
 import Tag from '../Tag'
+import { releases } from '../../constants/releases'
 
 function Hero() {
+  const getReleaseCover = (): string => {
+    return releases[Math.floor(Math.random() * releases.length)].imageUrl
+  }
+
   return (
     <section className="hero is-fullheight mt-5">
       <div className="hero-body ">
@@ -13,7 +18,7 @@ function Hero() {
 
         <TileItem dark title="Music to daydream to" rows={2} linkTo="/music">
           <figure className="image is-1by1">
-            <img src="https://f4.bcbits.com/img/a1328975379_10.jpg" />
+            <img src={getReleaseCover()} />
           </figure>
         </TileItem>
         
