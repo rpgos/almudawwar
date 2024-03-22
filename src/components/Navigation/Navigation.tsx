@@ -16,7 +16,7 @@ function Navigation() {
   }
 
   const isActiveClass = (path: string): string => {
-    return active === path ? 'is-active' : ''
+    return active === path ? 'has-background-info' : ''
   }
 
   return (
@@ -27,7 +27,7 @@ function Navigation() {
             return <li key={item.name}>
               <Link
                 to={item.path}
-                className={`${isActiveClass(item.path)} item`}
+                className={`${isActiveClass(item.path)} item has-text-primary`}
                 onClick={() => handleClick(item.path)}>
                   {item.name}
               </Link>
