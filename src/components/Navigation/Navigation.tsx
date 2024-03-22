@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './navigation.scss'
 import { Link, useLocation } from 'react-router-dom'
 import { menuItems } from './menuItems'
@@ -6,6 +6,10 @@ import { menuItems } from './menuItems'
 function Navigation() {
   const { pathname } = useLocation()
   const [active, setActive] = useState(pathname)
+
+  useEffect(() => {
+    setActive(pathname)
+  }, [pathname])
 
   const handleClick = (activeIndex: string) => {
     setActive(activeIndex)
@@ -20,7 +24,7 @@ function Navigation() {
       <ul className="menu">
         {
           menuItems.map(item => {
-            return <li>
+            return <li key={item.name}>
               <Link
                 to={item.path}
                 className={`${isActiveClass(item.path)} item`}
