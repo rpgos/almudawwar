@@ -7,7 +7,7 @@ import Tag from '../Tag'
 function Hero() {
   return (
     <section className="hero is-fullheight mt-5">
-      <div className="hero-body is-justify-content-center">
+      <div className="hero-body ">
       <TileGroup>
         <TileItem title='Al-Mudawwar' subtitle={`“that which is round”`} />
 

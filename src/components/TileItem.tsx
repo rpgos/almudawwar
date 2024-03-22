@@ -15,6 +15,7 @@ function TileItem({ dark, children, title, subtitle, rows, linkTo }: TileItemPro
     cell: true,
     notification: true,
     'is-primary': !dark,
+    'has-text-dark': !dark,
     'has-background-primary-15': dark,
     [`is-row-span-${rows}`]: rows,
   })
