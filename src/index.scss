@@ -1,5 +1,22 @@
 @charset "utf-8";
 
-@import '_variables.scss';
+$darkPurple: #28112B;
+$purple: #453643;
+$green: #8DAA91;
+$orange: #FCAF58;
+$red: #CC2936;
 
-@import 'bulma/bulma.sass';
+@use "bulma/sass" with (
+  $primary: $green,
+  $text: $green,
+  $danger: $red,
+  $link: $orange,
+  $background: $darkPurple,
+  $box-background-color: $purple,
+  $info: $purple,
+  $footer-padding: 3rem,
+  $dark: $darkPurple,
+  $light: $green,
+);
+
+@import 'bulma/bulma.scss';

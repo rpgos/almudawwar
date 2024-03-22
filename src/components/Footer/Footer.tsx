@@ -3,7 +3,7 @@ import './footer.scss'
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer has-background-info">
       <div className="content has-text-centered">
         © Al-Mudawwar {new Date().getFullYear()}
         <div className="is-flex is-flex-direction-row is-justify-content-center mt-2">

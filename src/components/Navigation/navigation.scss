@@ -1,4 +1,4 @@
-@import '../../_variables.scss';
+@use "bulma/sass/utilities/mixins";
 
 .navigation {
   position: fixed;
@@ -13,22 +13,20 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 7px;
     padding: 13px;
     width: fit-content;
     border-radius: 50px;
     backdrop-filter: blur(20px) saturate(1.7);
     background: hsla(293, 43%, 12%, 0.71);
+
+    @include mixins.from(380px) {
+      gap: 7px;
+    }
   }
 
   .item {
     padding: 10px 25px;
     border-radius: 50px;
-    color: $text;
     transition: all .2s ease-in-out;
-
-    &.is-active {
-      background-color: $purple;
-    }
   }
 }
