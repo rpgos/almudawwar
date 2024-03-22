@@ -3,7 +3,7 @@ interface TileGroupProps {
 }
 
 function TileGroup({ children }: TileGroupProps) {
-  return <div className="tile is-ancestor">
+  return <div className="grid is-col-min-12 is-gap-3">
     {children}
   </div>
 }

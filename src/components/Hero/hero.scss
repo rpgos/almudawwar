@@ -1,13 +1,14 @@
 .hero {
-  .tile {
-  
-    .is-child {
-      transition: all .2s ease-in-out;
+  .cell {
+    transition: all .2s ease-in-out;
     
-      &:hover {
-        transform: scale(1.1);
-        border: 3px solid #8DAA91;
-      }
+    &:hover {
+      transform: scale(1.1);
+      border: 3px solid #8DAA91;
     }
+  }
+
+  .notification:not(:last-child) {
+    margin-bottom: 0;
   }
 }

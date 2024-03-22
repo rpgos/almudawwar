@@ -1,26 +1,25 @@
 import classNames from 'classnames'
+import { Link } from 'react-router-dom'
 
 interface TileItemProps {
-  parent?: boolean
-  vertical?: boolean
   dark?: boolean
   children?: React.ReactNode
   title?: string
-  subtitle?: string
+  subtitle?: string,
+  rows?: number,
+  linkTo?: string,
 }
 
-function TileItem({ parent, vertical, dark, children, title, subtitle }: TileItemProps) {
+function TileItem({ dark, children, title, subtitle, rows, linkTo }: TileItemProps) {
   const classes = classNames({
-    tile: true,
-    notification: !parent,
-    'is-parent': parent,
-    'is-child': !parent,
-    'is-vertical': vertical,
-    'is-primary': !dark && !parent,
-    'is-dark': dark,
+    cell: true,
+    notification: true,
+    'is-primary': !dark,
+    'has-background-primary-15': dark,
+    [`is-row-span-${rows}`]: rows,
   })
 
-  return <div className={classes}>
+  const renderedContent = <>
     { title && <p className="title is-2">{title}</p>}
     {
       subtitle &&
@@ -29,6 +28,15 @@ function TileItem({ parent, vertical, dark, children, title, subtitle }: TileIte
       </div>
     }
     {children}
+  </>
+
+  if (linkTo) {
+    return <Link className={classes} to={linkTo}>{renderedContent}</Link>
+  }
+
+
+  return <div className={classes}>
+    {renderedContent}
   </div>
 }
 
