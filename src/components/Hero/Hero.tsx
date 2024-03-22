@@ -2,6 +2,7 @@ import { SKILLS } from '../../constants/skills'
 import './hero.scss'
 import TileGroup from '../TileGroup'
 import TileItem from '../TileItem'
+import Tag from '../Tag'
 
 function Hero() {
   return (
@@ -19,9 +20,7 @@ function Hero() {
         <TileItem dark title="Software Development" rows={2} linkTo="/work">
           <div className="tags">
             {
-              SKILLS.map(skill =>{
-                return <span key={skill} className="tag is-rounded">{skill}</span>
-              })
+              SKILLS.map(skill => <Tag key={skill} text={skill} bold dark rounded />)
             }
           </div>
         </TileItem>
