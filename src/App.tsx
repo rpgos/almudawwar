@@ -4,7 +4,7 @@ import Footer from './components/Footer/Footer'
 import Root from './components/Root'
 import HomePage from './pages/HomePage'
 import MusicPage from './pages/MusicPage'
-import CvPage from './pages/CvPage'
+import WorkPage from './pages/WorkPage'
 import AboutPage from './pages/AboutPage'
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
         },
         {
           path: '/work',
-          element: <CvPage />
+          element: <WorkPage />
         },
         {
           path: '/about',
