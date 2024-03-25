@@ -1,12 +1,12 @@
 interface LinkBoxProps {
   linkTo?: string
-  modalId?: string
   text: string
+  onClick?: () => void
 }
 
-function LinkBox({ text, linkTo, modalId }: LinkBoxProps) {
+function LinkBox({ text, linkTo, onClick }: LinkBoxProps) {
   return (
-    <a className="box" href={linkTo} target="_blank">
+    <a className="box" href={linkTo} target="_blank" onClick={onClick}>
       {text}
     </a>
   )
