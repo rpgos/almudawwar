@@ -1,7 +1,6 @@
 import spotifyLogo from '../assets/icons/spotify.png'
 import bandcampLogo from '../assets/icons/bandcamp.png'
 import githubLogo from '../assets/icons/github.png'
-import linkedinLogo from '../assets/icons/linkedin.png'
 import instagramLogo from '../assets/icons/instagram.png'
 
 interface ExternalWebsiteProps {
@@ -22,18 +21,13 @@ export const externalLinks: ExternalWebsiteProps[] = [
     logoPath: bandcampLogo
   },
   {
-    name: 'Github',
-    url: 'https://github.com/almudawwar',
-    logoPath: githubLogo
-  },
-  {
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/rodrigopguerreiro/',
-    logoPath: linkedinLogo
-  },
-  {
     name: 'Instagram',
     url: 'https://www.instagram.com/al_mudawwar',
     logoPath: instagramLogo
+  },
+  {
+    name: 'Github',
+    url: 'https://github.com/almudawwar',
+    logoPath: githubLogo
   },
 ]
