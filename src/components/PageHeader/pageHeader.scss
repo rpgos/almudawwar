@@ -1,5 +1,11 @@
+@use "bulma/sass/utilities/mixins";
+
 .page-header {
   .title {
-    font-size: 4rem;
+    font-size: 3rem;
+    
+    @include mixins.from(430px) {
+      font-size: 4rem;
+    }
   }
 }
