@@ -4,7 +4,7 @@ import Footer from './components/Footer/Footer'
 import Root from './components/Root'
 import HomePage from './pages/HomePage'
 import MusicPage from './pages/MusicPage'
-import WorkPage from './pages/WorkPage'
+import LinksPage from './pages/LinksPage'
 import AboutPage from './pages/AboutPage'
 
 function App() {
@@ -22,8 +22,8 @@ function App() {
           element: <MusicPage />
         },
         {
-          path: '/work',
-          element: <WorkPage />
+          path: '/links',
+          element: <LinksPage />
         },
         {
           path: '/about',

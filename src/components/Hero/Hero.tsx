@@ -22,7 +22,7 @@ function Hero() {
           </figure>
         </TileItem>
         
-        <TileItem dark title="Software Development" rows={2} linkTo="/work">
+        <TileItem dark title="Software Development" rows={2} linkTo="/links">
           <div className="tags">
             {
               SKILLS.map(skill => <Tag key={skill} text={skill} bold dark rounded />)

@@ -13,8 +13,8 @@ export const menuItems: MenuItem[] = [
     name: 'Music',
   },
   {
-    path: '/work',
-    name: 'Work',
+    path: '/links',
+    name: 'Links',
   },
   {
     path: '/about',
