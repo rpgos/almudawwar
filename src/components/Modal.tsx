@@ -39,7 +39,7 @@ export default function Modal({ show, children, handleClose }: ModalProps) {
     <div className={classes}>
       <div className="modal-background"></div>
       <div ref={divEl} className="modal-content">
-        <section className="modal-card-body">
+        <section className="modal-card-body is-flex is-flex-direction-column">
             {children}
         </section>
       </div>

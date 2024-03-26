@@ -2,7 +2,7 @@ import { useState } from "react"
 import Button from "../components/Button"
 import Modal from "../components/Modal"
 import PageHeader from "../components/PageHeader/PageHeader"
-import { externalLinks } from "../constants/links"
+import { externalLinks, streamingLinks } from "../constants/links"
 
 function LinksPage() {
   const [showModal, setShowModal] = useState(false)
@@ -22,9 +22,16 @@ function LinksPage() {
         </div>
 
         <Modal show={showModal} handleClose={() => { setShowModal(false) }}>
-            This page is being worked on and will be available very soon.
-
-            <progress className="progress is-small is-primary mt-5" max="100"></progress>
+          <figure className="image is-128x128 is-align-self-center">
+            <img className="is-rounded" src="https://f4.bcbits.com/img/a1408437784_10.jpg" />
+          </figure>
+          <div className="buttons mt-5">
+            {
+              streamingLinks.map(service => {
+                return <Button primary outlined rounded fullwidth medium text={service.name} linkTo={service.url} icon={service.logoPath} />
+              })
+            }
+          </div>
         </Modal>
       </div>
     </div>

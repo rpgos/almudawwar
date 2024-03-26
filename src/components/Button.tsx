@@ -12,9 +12,10 @@ interface ButtonProps {
   fullwidth?: boolean,
   dark?: boolean,
   rounded?: boolean,
+  icon?: string
 }
 
-function Button({ text, linkTo, onClick, primary, outlined, small, medium, large, fullwidth, dark, rounded }: ButtonProps) {
+function Button({ text, linkTo, onClick, primary, outlined, small, medium, large, fullwidth, dark, rounded, icon }: ButtonProps) {
   const classes = classNames({
     button: true,
     'is-responsive': true,
@@ -30,7 +31,14 @@ function Button({ text, linkTo, onClick, primary, outlined, small, medium, large
 
   return (
     <a className={classes} href={linkTo} target="_blank" onClick={onClick}>
-      {text}
+      {
+        icon &&
+        <span className="icon">
+          <img src={icon}></img>
+        </span>
+
+      }
+      <span className="is-flex-grow-1">{text}</span>
     </a>
   )
 }
