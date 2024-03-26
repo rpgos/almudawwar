@@ -28,7 +28,7 @@ function LinksPage() {
           <div className="buttons mt-5">
             {
               streamingLinks.map(service => {
-                return <Button primary outlined rounded fullwidth medium text={service.name} linkTo={service.url} icon={service.logoPath} />
+                return <Button key={service.name} primary outlined rounded fullwidth medium text={service.name} linkTo={service.url} icon={service.logoPath} />
               })
             }
           </div>

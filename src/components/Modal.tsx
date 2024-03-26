@@ -8,7 +8,7 @@ interface ModalProps {
 }
 
 export default function Modal({ show, children, handleClose }: ModalProps) {
-  const divEl = useRef<HTMLElement>(null)
+  const divEl = useRef<HTMLDivElement | null>(null)
   useEffect(() => {
     const escapeHandler = (event: KeyboardEvent) => {
       if(event.key === "Escape") {
