@@ -17,8 +17,8 @@ function LinksPage() {
         <div className="buttons">
           <Button primary outlined rounded fullwidth large text="Streaming services" onClick={() => { setShowModal(true) }} />
           <Button primary outlined rounded fullwidth large text="Instagram" linkTo={instagramUrl} />
-          <Button primary outlined rounded fullwidth large text="Github (check the site's code)" linkTo={githubUrl} />
           <Button primary outlined rounded fullwidth large text="Send me an e-mail!" linkTo="mailto:almudawwar@gmail.com" />
+          <Button primary outlined rounded fullwidth large text="Github (check the site's code)" linkTo={githubUrl} />
         </div>
 
         <Modal show={showModal} handleClose={() => { setShowModal(false) }}>
