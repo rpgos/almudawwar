@@ -20,7 +20,7 @@ function Hero() {
           </figure>
         </TileItem>
         
-        <TileItem dark subtitle="...and a musical project by" linkTo="/about" rows={2}>
+        <TileItem dark subtitle="...a musical project by" linkTo="/about" rows={2}>
           <p><span className="tag is-primary is-large is-rounded">Rodrigo Guerreiro</span></p>
         </TileItem>
         

@@ -1,9 +1,11 @@
+import PageHeader from "../components/PageHeader/PageHeader"
 
 function AboutPage() {
 
   return (
     <div className="mt-3">
-      <div className="section is-large">
+      <PageHeader title="Al-Mudawwar" subtitle="Music to daydream to" />
+      <div className="section">
         <div className="box">
             This page is being worked on and will be available very soon.
 
