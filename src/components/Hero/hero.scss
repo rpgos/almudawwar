@@ -20,10 +20,20 @@
   }
 
   .hero {
-    border-radius: 200px;
+    @include mixins.from(600px) {
+      border-radius: 200px;
+      border: 1px solid;
+    }
+  }
+  
+  .circle {
+    border: 1px solid;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    position: absolute;
     backdrop-filter: blur(5px) saturate(1.7);
     background: hsla(293, 43%, 12%, 0.71);
-    border: 1px solid;
   }
 }
 
