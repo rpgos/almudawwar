@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage'
 import MusicPage from './pages/MusicPage'
 import LinksPage from './pages/LinksPage'
 import AboutPage from './pages/AboutPage'
+import { PlayerContextProvider } from "./context/playerContext";
 
 function App() {
   const router = createBrowserRouter([
@@ -34,7 +35,9 @@ function App() {
   ])
   return (
     <>
-      <RouterProvider router={router} />
+      <PlayerContextProvider>
+        <RouterProvider router={router} />
+      </PlayerContextProvider>
       <Footer />
     </>
   )
