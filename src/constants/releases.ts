@@ -1,4 +1,4 @@
-import { Release } from "../common/types"
+import { Release } from "../@types/release"
 
 export const releases: Release[] = [
   {
