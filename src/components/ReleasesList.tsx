@@ -1,4 +1,4 @@
-import { Release } from "../common/types"
+import { Release } from "../@types/release"
 import { releases } from "../constants/releases"
 import ReleasesListItem from "./ReleasesListItem"
 
