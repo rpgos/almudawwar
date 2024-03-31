@@ -1,0 +1,15 @@
+@use "bulma/sass/utilities/mixins";
+
+.image {
+  margin: auto;
+  border: 1px solid;
+  border-radius: 12px;
+
+  img {
+    border-radius: 11px;
+  }
+
+  @include mixins.from(430px) {
+    max-width: 70%;
+  }
+}
