@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 interface ModalProps {
   show: boolean
-  children: React.ReactNode[]
+  children: React.ReactNode | React.ReactNode[]
   handleClose: () => void
 }
 
