@@ -32,7 +32,7 @@ export const externalLinks: ExternalWebsiteProps[] = [
   },
   {
     name: 'Github',
-    url: 'https://github.com/almudawwar',
+    url: 'https://github.com/almudawwar/almudawwar',
     logoPath: githubLogo
   },
 ]
