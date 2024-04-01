@@ -3,6 +3,15 @@
   margin: 0 auto;
   padding: 1rem;
   text-align: center;
+  box-shadow: 0px 0 20px;
+  border: 1px solid;
+  border-radius: 600px 600px 0 0;
+  background-color: #28112B;
+}
+
+body {
+  background-image: url("https://xq2qvv7gox71g5pq.public.blob.vercel-storage.com/base-DN5XkdQsza9IAi6d4HNqdNQoxH6WDp.jpg");
+  background-size: 100lvw;
 }
 
 .title {
