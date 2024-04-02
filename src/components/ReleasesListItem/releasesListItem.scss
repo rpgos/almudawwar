@@ -1,0 +1,22 @@
+@use "bulma/sass/utilities/mixins";
+
+.release-container {
+  width: 311px;
+  height: 311px;
+  background-color: #453643;
+  
+  @include mixins.from(430px) {
+    width: 563px;
+    height: 563px;
+  }
+
+  .release-back {
+    padding: 30px;
+  }
+
+  .tracklist {
+    list-style-position: inside;
+    text-align: start;
+    column-count: 2;
+  }
+}

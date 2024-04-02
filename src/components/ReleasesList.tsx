@@ -1,6 +1,6 @@
 import { Release } from "../@types/release"
 import { releases } from "../constants/releases"
-import ReleasesListItem from "./ReleasesListItem"
+import ReleasesListItem from "./ReleasesListItem/ReleasesListItem"
 
 function ReleasesList() {
   const releaseRows: Release[][] = []
