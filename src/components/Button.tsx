@@ -2,7 +2,7 @@ import classNames from 'classnames'
 
 interface ButtonProps {
   linkTo?: string
-  text: string
+  text?: string
   onClick?: () => void,
   primary?: boolean,
   outlined?: boolean,
@@ -12,10 +12,12 @@ interface ButtonProps {
   fullwidth?: boolean,
   dark?: boolean,
   rounded?: boolean,
-  icon?: string
+  icon?: string,
+  className?: string,
+  children?: React.ReactNode
 }
 
-function Button({ text, linkTo, onClick, primary, outlined, small, medium, large, fullwidth, dark, rounded, icon }: ButtonProps) {
+function Button({ text, linkTo, onClick, primary, outlined, small, medium, large, fullwidth, dark, rounded, icon, className, children }: ButtonProps) {
   const classes = classNames({
     button: true,
     'is-responsive': true,
@@ -26,11 +28,12 @@ function Button({ text, linkTo, onClick, primary, outlined, small, medium, large
     'is-small': small,
     'is-medium': medium,
     'is-large': large,
-    'is-fullwidth': fullwidth,
-  })
+    'is-fullwidth': fullwidth, 
+  }, className)
 
   return (
     <a className={classes} href={linkTo} target="_blank" onClick={onClick}>
+      {children}
       {
         icon &&
         <span className="icon">

@@ -1,0 +1,71 @@
+@use "bulma/sass/utilities/mixins";
+
+.release-container {
+  width: 290px;
+  height: 290px;
+  background-color: #453643;
+  margin: auto;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+  @include mixins.from(390px) {
+    width: 311px;
+    height: 311px;
+  }
+  
+  @include mixins.from(800px) {
+    width: 352px;
+    height: 352px;
+  }
+
+  @include mixins.from(1295px) {
+    width: 563px;
+    height: 563px;
+    margin: 0;
+  }
+
+  &.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .release-front, .release-back {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%
+  }
+  .release-back {
+    position: absolute;
+    transform: rotateY(180deg);
+    padding: 30px;
+  }
+
+  .tracklist {
+    list-style-position: inside;
+    margin: 0 auto;
+    font-size: 0.8rem;
+
+    @include mixins.from(430px) {
+      font-size: 1rem;
+    }
+
+    &.long {
+      column-count: 2;
+    }
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+.flip-button {
+  bottom: 15px;
+  right: 15px;
+  
+  @include mixins.from(800px) {
+    bottom: 20px;
+    right: 20px;
+  }
+}
