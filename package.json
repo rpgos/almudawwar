@@ -30,6 +30,7 @@
     "sass": "^1.72.0",
     "sass-loader": "^14.1.1",
     "typescript": "^5.2.2",
-    "vite": "^5.1.4"
+    "vite": "^5.1.4",
+    "vite-plugin-vercel": "^5.0.5"
   }
 }
