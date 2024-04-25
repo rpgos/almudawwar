@@ -7,6 +7,7 @@ import MusicPage from './pages/MusicPage'
 import LinksPage from './pages/LinksPage'
 import AboutPage from './pages/AboutPage'
 import { PlayerContextProvider } from "./context/playerContext";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const router = createBrowserRouter([
@@ -36,6 +37,7 @@ function App() {
   return (
     <>
       <PlayerContextProvider>
+        <Analytics />
         <RouterProvider router={router} />
       </PlayerContextProvider>
       <Footer />

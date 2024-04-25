@@ -14,7 +14,7 @@ function AboutPage() {
             and namings, like Al-Mudawwar, "the round castle".
           </p>
           <p className="block">A place between the mountains and the plains.</p>
-          <Image source="https://xq2qvv7gox71g5pq.public.blob.vercel-storage.com/amaro-kSDHamNvDMkDMzeG7HaTLncAn4FY1G.jpg" />
+          <Image source="https://i.imgur.com/ARl5SMf.jpeg" />
           {/* <Image source="https://xq2qvv7gox71g5pq.public.blob.vercel-storage.com/adv-hZg9jILMw7GKgpYnC7MqC7KUYc3ssY.jpg" /> */}
         </div>
       </div>
