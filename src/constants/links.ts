@@ -8,13 +8,13 @@ import appleMusicLogo from '../assets/icons/apple_music.svg'
 import youtubeMusicLogo from '../assets/icons/youtube_music.svg'
 import amazonMusicLogo from '../assets/icons/amazon_music.png'
 
-interface ExternalWebsiteProps {
+interface ExternalWebsite {
   name: string
   url: string
   logoPath: string
 }
 
-export const externalLinks: ExternalWebsiteProps[] = [
+export const externalLinks: ExternalWebsite[] = [
   {
     name: 'Spotify',
     url: 'https://open.spotify.com/artist/1Zd6VFfOVh04zXMVpK96Xy?si=dszUb5HdS56xxpt7uuhlAw',
@@ -22,7 +22,7 @@ export const externalLinks: ExternalWebsiteProps[] = [
   },
   {
     name: 'Bandcamp',
-    url: 'https://al-mudawwar.bandcamp.com/album/natureza-sagrada',
+    url: 'https://al-mudawwar.bandcamp.com/music',
     logoPath: bandcampLogo
   },
   {
@@ -37,15 +37,17 @@ export const externalLinks: ExternalWebsiteProps[] = [
   },
 ]
 
-export const streamingLinks: ExternalWebsiteProps[] = [
+export const streamingLinks: ExternalWebsite[] = [
   {
     name: 'Spotify',
-    url: 'https://open.spotify.com/artist/1Zd6VFfOVh04zXMVpK96Xy?si=dszUb5HdS56xxpt7uuhlAw',
+    // url: 'https://open.spotify.com/artist/1Zd6VFfOVh04zXMVpK96Xy?si=dszUb5HdS56xxpt7uuhlAw',
+    url: 'https://open.spotify.com/album/5LdJz37QiPZ1kFpIva1twi',
     logoPath: spotifyLogo
   },
   {
     name: 'Apple Music',
-    url: 'https://music.apple.com/pt/artist/al-mudawwar/1640109838?l=en-GB',
+    // url: 'https://music.apple.com/pt/artist/al-mudawwar/1640109838?l=en-GB',
+    url: 'https://music.apple.com/pt/album/natureza-sagrada/1725877557',
     logoPath: appleMusicLogo
   },
   {
@@ -66,12 +68,14 @@ export const streamingLinks: ExternalWebsiteProps[] = [
   },
   {
     name: 'YouTube Music',
-    url: 'https://music.youtube.com/channel/UC0-LjdKW71UVGkZVp6-IqUg',
+    // url: 'https://music.youtube.com/channel/UC0-LjdKW71UVGkZVp6-IqUg',
+    url: 'https://music.youtube.com/playlist?list=OLAK5uy_meR96dbNWKcf3r4bTnB5-PmX-7KSSjCDA',
     logoPath: youtubeMusicLogo
   },
   {
     name: 'Amazon Music',
-    url: 'https://music.amazon.com/artists/B0B9V3MNMQ/al-mudawwar',
+    // url: 'https://music.amazon.com/artists/B0B9V3MNMQ/al-mudawwar',
+    url: 'https://www.amazon.com/gp/product/B0CSB3C2F5',
     logoPath: amazonMusicLogo
   },
 ]

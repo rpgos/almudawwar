@@ -3,10 +3,14 @@ import Button from "../components/Button"
 import Modal from "../components/Modal"
 import PageHeader from "../components/PageHeader/PageHeader"
 import { externalLinks, streamingLinks } from "../constants/links"
+import { useSearchParams } from "react-router-dom"
+
+const campaignCopyHtml = "Natureza Sagrada <br> Listen on any service below!"
 
 function LinksPage() {
-  const [showModal, setShowModal] = useState(false)
-
+  const [urlParams] = useSearchParams()
+  const isFromCampaign = urlParams.get('source') === 'qrcode'
+  const [showModal, setShowModal] = useState(isFromCampaign)
   const instagramUrl = externalLinks.find(item => item.name === 'Instagram')?.url || ''
   const githubUrl = externalLinks.find(item => item.name === 'Github')?.url || ''
 
@@ -22,9 +26,11 @@ function LinksPage() {
         </div>
 
         <Modal show={showModal} handleClose={() => { setShowModal(false) }}>
+          <p className="title has-text-centered">Al-Mudawwar</p>
           <figure className="image is-128x128 is-align-self-center">
             <img className="is-rounded" src="https://f4.bcbits.com/img/a1408437784_10.jpg" />
           </figure>
+          {isFromCampaign && <p className="has-text-centered has-text-weight-medium" dangerouslySetInnerHTML={{ __html: campaignCopyHtml }}></p> }
           <div className="buttons mt-5">
             {
               streamingLinks.map(service => {
