@@ -5,6 +5,7 @@ $purple: #453643;
 $green: #8DAA91;
 $orange: #FCAF58;
 $red: #CC2936;
+$transparentPurple: rgba(69, 54, 67, 0.5);
 
 @use "bulma/sass" with (
   $primary: $green,
@@ -17,6 +18,8 @@ $red: #CC2936;
   $footer-padding: 3rem,
   $dark: $darkPurple,
   $light: $green,
+  $modal-background-background-color: $transparentPurple,
+  $modal-card-body-background-color: $darkPurple,
 );
 
 @import 'bulma/bulma.scss';
