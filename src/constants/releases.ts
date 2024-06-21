@@ -2,6 +2,12 @@ import { Release } from "../@types/release"
 
 export const releases: Release[] = [
   {
+    name: 'Opening',
+    imageUrl: 'https://f4.bcbits.com/img/a3198571658_10.jpg',
+    bandcampUrl: 'https://al-mudawwar.bandcamp.com/track/opening',
+    tracklist: ['Opening']
+  },
+  {
     name: 'Natureza Sagrada',
     imageUrl: 'https://f4.bcbits.com/img/a1408437784_10.jpg',
     bandcampUrl: 'https://al-mudawwar.bandcamp.com/album/natureza-sagrada',

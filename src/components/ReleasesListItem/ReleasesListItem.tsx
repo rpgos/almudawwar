@@ -1,5 +1,5 @@
-import { useState } from "react"
-import { GiSideswipe } from "react-icons/gi";
+// import { useState } from "react"
+// import { GiSideswipe } from "react-icons/gi";
 import { Release } from "../../@types/release"
 import Button from "../Button"
 import './releasesListItem.scss'
@@ -9,11 +9,11 @@ interface ReleasesListItemProps {
 }
 
 function ReleasesListItem({ release }: ReleasesListItemProps) {
-  const [isFlipped, setIsFlipped] = useState(false)
+  // const [isFlipped, setIsFlipped] = useState(false)
 
-  const handleClick = () => {
-    setIsFlipped(!isFlipped)
-  }
+  // const handleClick = () => {
+  //   setIsFlipped(!isFlipped)
+  // }
 
   const renderedBack = () => {
     const columnClass = release.tracklist.length > 3 ? 'long' : ''
@@ -33,7 +33,8 @@ function ReleasesListItem({ release }: ReleasesListItemProps) {
     )
   }
 
-  const columnClass = isFlipped ? 'flipped' : ''
+  const columnClass = ''
+  // const columnClass = isFlipped ? 'flipped' : ''
 
   return (
     <div className="column is-relative">
@@ -42,9 +43,9 @@ function ReleasesListItem({ release }: ReleasesListItemProps) {
         {renderedBack()}
       </div>
       
-      <Button className="flip-button is-position-absolute" rounded onClick={handleClick}>
+      {/* <Button className="flip-button is-position-absolute" rounded onClick={handleClick}>
         <GiSideswipe />
-      </Button>
+      </Button> */}
     </div>
   )
 }
