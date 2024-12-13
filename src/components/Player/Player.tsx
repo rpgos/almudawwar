@@ -7,8 +7,6 @@ import { PlayerContextType } from '../../@types/player'
 export default function Player() {
   const { isPlaying, setIsPlaying, play, pause } = useContext(PlayerContext) as PlayerContextType
 
-  console.log(isPlaying)
-
   const handlePlay = () => {
     if(isPlaying) {
       pause()
