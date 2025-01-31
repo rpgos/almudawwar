@@ -7,7 +7,7 @@ interface ImageProps {
 export default function Image({ source }: ImageProps) {
   return (
     <figure className="image">
-      <img src={source} />
+      <img src={source} alt="" />
     </figure>
   )
 }

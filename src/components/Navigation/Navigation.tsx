@@ -20,7 +20,7 @@ function Navigation() {
   }
 
   return (
-    <nav className="navigation">
+    <nav className="navigation" role='navigation'>
       <ul className="menu">
         {
           menuItems.map(item => {

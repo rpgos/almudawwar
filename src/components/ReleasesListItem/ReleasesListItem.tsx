@@ -39,7 +39,7 @@ function ReleasesListItem({ release }: ReleasesListItemProps) {
   return (
     <div className="column is-relative">
       <div className={`release-container is-flex ${columnClass}`}>
-        <img className="release-front" src={release.imageUrl} />
+        <img className="release-front" src={release.imageUrl} alt={'Album cover: ' + release.name} />
         {renderedBack()}
       </div>
       

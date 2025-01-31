@@ -10,8 +10,8 @@ function Footer() {
           {
             externalLinks.map(site => {
               return <div key={site.name}>
-              <a href={site.url} target='_blank'>
-                <img src={site.logoPath} className='logo' alt={site.name} />
+              <a href={site.url} target='_blank' aria-label={site.name}>
+                <img src={site.logoPath} className='logo' alt="" />
               </a>
             </div>
             })
