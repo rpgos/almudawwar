@@ -1,5 +1,4 @@
 import { createContext, useState } from "react"
-// @ts-expect-error: No typing in use-sound as of now
 import useSound from 'use-sound'
 import daydreaming from "../assets/sounds/Daydreaming.mp3";
 import { PlayerContextType } from "../@types/player";
