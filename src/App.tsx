@@ -8,6 +8,7 @@ import LinksPage from './pages/LinksPage'
 import AboutPage from './pages/AboutPage'
 import { PlayerContextProvider } from "./context/playerContext";
 import { Analytics } from "@vercel/analytics/react"
+import { KofiFloatingButtonReact } from 'kofi-react-widget'
 
 function App() {
   const router = createBrowserRouter([
@@ -41,6 +42,7 @@ function App() {
         <RouterProvider router={router} />
       </PlayerContextProvider>
       <Footer />
+      <KofiFloatingButtonReact username='rodribuilds' background='#FA4' />
     </>
   )
 }
