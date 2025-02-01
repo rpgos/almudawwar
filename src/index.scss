@@ -22,4 +22,4 @@ $transparentPurple: rgba(69, 54, 67, 0.5);
   $modal-card-body-background-color: $darkPurple,
 );
 
-@import 'bulma/bulma.scss';
+@use 'bulma/bulma.scss';
