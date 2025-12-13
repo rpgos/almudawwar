@@ -2,6 +2,12 @@ import { Release } from "../@types/release"
 
 export const releases: Release[] = [
   {
+    name: 'Sunset in Piran',
+    imageUrl: 'https://f4.bcbits.com/img/a3971789529_10.jpg',
+    bandcampUrl: 'https://al-mudawwar.bandcamp.com/track/sunset-in-piran',
+    tracklist: ['Sunset in Piran']
+  },
+  {
     name: 'Opening',
     imageUrl: 'https://f4.bcbits.com/img/a3198571658_10.jpg',
     bandcampUrl: 'https://al-mudawwar.bandcamp.com/track/opening',
